@@ -74,7 +74,7 @@
 }
 #quitbutton{
     position: relative;
-    background-color: #E84342;
+    background-color: #FF3E4D;
     border: none;
     font-size: 18px;
     color: #FFFFFF;
@@ -86,13 +86,12 @@
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
+     border-radius: 30%;
     float: right;
-    margin-top: -3.9em;
     margin-right: 3em;
-    border-radius: 30%;
-    height: 60px;
-    border-top-
-}
+    margin-top: -3.9em;
+  }
+
 #quitbutton:after {
     content: "";
     background: #90EE90;
@@ -103,16 +102,15 @@
     margin-left: -20px!important;
     margin-top: -120%;
     opacity: 0;
-    transition: all 0.8s;
-
+    transition: all 0.8s
   }
+  
 #quitbutton:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
-    transition: 0s;
-}
-  
+    transition: 0s
+  }
 
 #questions{
     background-color: white;
@@ -127,7 +125,7 @@
 }
 #nextbutton{
   position: relative;
-  background-color: #4CAF50;
+  background-color: #78909c;
   border: none;
   font-size: 20px;
   color: #FFFFFF;
@@ -140,5 +138,61 @@
   overflow: hidden;
   cursor: pointer;
   margin-left: 5em;
-  border-radius: 20%;
+  border-radius: 30%;
+
 }
+#nextbutton:after {
+    content: "";
+    background: #EAF0F1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  #nextbutton:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+#backbutton{
+    position: relative;
+    background-color: #78909c;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 90px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: 5em;
+    border-radius: 30%;  
+    margin-left: 24em;
+}
+#backbutton:after {
+    content: "";
+    background: #EAF0F1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+#backbutton:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }

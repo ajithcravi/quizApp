@@ -12,3 +12,27 @@
     cursor: pointer;
  
 }
+
+
+
+#quitbutton{
+    position: relative;
+    background-color: #E84342;
+    border: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 80px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    float: right;
+    margin-top: -3.9em;
+    margin-right: 3em;
+    border-radius: 30%;
+    height: 60px;
+    border-top-
+}
