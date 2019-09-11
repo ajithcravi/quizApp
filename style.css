@@ -1,0 +1,100 @@
+.container-fluid .box1{
+    background-color: white;
+    height: 6em;
+    width: 100vw;
+    padding: 0 !important;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-radius: 3%;
+    border-style: solid;
+    border-width: 1.5px;
+
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: white;
+    background-color: #BB2CD9;
+       
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .opnbtn{
+      margin-left: 2em;
+      padding-top: 2em;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+#maths{
+     
+      border-radius: 4%;
+      
+  }
+   #code{
+   
+    border-radius: 4%;
+  }
+#science{
+  
+    border-radius: 4%;
+}
+#time{
+    color: black;
+     text-align: center;
+    margin-top: -20px;
+}
+#quitbutton{
+    background-color: red;
+    float: right;
+    margin-right: 3em;
+    margin-top: -3em;
+    height: 2em;
+    width: 3em;
+    border-radius: 0.8em;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5px;
+    cursor: pointer;
+ 
+}
+
+#questions{
+    background-color: #BB2CD9;
+    height: 23em;
+    align-content: center;
+  
+}
+#endbuttons{
+    background-color: aqua;
+    height: 9.4em;
+    align-content: center;
+}
