@@ -73,28 +73,72 @@
     margin-top: -20px;
 }
 #quitbutton{
-    background-color: red;
-    float: right;
-    margin-right: 3em;
-    margin-top: -3em;
-    height: 2em;
-    width: 3em;
-    border-radius: 0.8em;
-    border-style: solid;
-    border-color: black;
-    border-width: 0.5px;
+    position: relative;
+    background-color: #E84342;
+    border: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 80px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
     cursor: pointer;
- 
+    float: right;
+    margin-top: -3.9em;
+    margin-right: 3em;
+    border-radius: 30%;
+    height: 60px;
+    border-top-
 }
+#quitbutton:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+
+  }
+#quitbutton:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+  
 
 #questions{
-    background-color: #BB2CD9;
+    background-color: white;
     height: 23em;
     align-content: center;
   
 }
 #endbuttons{
-    background-color: aqua;
+    background-color:white;
     height: 9.4em;
     align-content: center;
+}
+#nextbutton{
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 90px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: 5em;
+  border-radius: 20%;
 }

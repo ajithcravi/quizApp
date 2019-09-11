@@ -1,0 +1,14 @@
+#quitbutton{
+    background-color: red;
+    float: right;
+    margin-right: 3em;
+    margin-top: -3em;
+    height: 2em;
+    width: 3em;
+    border-radius: 0.8em;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5px;
+    cursor: pointer;
+ 
+}
