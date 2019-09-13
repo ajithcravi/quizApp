@@ -40,7 +40,7 @@ Authors: Ajith C Ravi, Parvez Shah -->
         <div class="row thirdRow">
             <div class="col-1"></div>
             <div class="col-10" style="text-align: center">
-                <button class="primaryButton">How?</button>
+                <button class="primaryButton" onclick="switchDiv(2)">How?</button>
             </div>
             <div class="col-1"></div>
         </div>
@@ -62,7 +62,7 @@ Authors: Ajith C Ravi, Parvez Shah -->
             <div class="row thirdRow">
                 <div class="col-1"></div>
                 <div class="col-10" style="text-align: center">
-                    <button class="primaryButton customButtonOne">Play Now</button>
+                    <button class="primaryButton customButtonOne" onclick="switchDiv(3)">Play Now</button>
                 </div>
                 <div class="col-1"></div>
             </div>
@@ -74,20 +74,18 @@ Authors: Ajith C Ravi, Parvez Shah -->
                 <div class="col-6"></div>
                 <div class="col-4"><img class="topLogo" src="images/logo.png" alt="Logo"></div>
             </div>
-            <div class="row secondRow">
+            <div class="row secondRow customSecondRow">
                 <div class="col-1"></div>
-                <div class="col-5">                    
-                    <h3>Questions</h3>
-                    <p class="mainContent">
+                <div class="col-10">                    
+                    <h2>Questions</h2>
+                    <p class="instruction">
                         Aptitude - 4 <br>
                         Mathematics - 4 <br>
                         General Knowledge - 2 <br>
                         Total - 10
                     </p>
-                </div>
-                <div class="col-5">                    
-                    <h3>Marks</h3>
-                    <p class="mainContent">
+                    <h2>Marks</h2>
+                    <p class="instruction">
                         Correct Answer = +1 <br>
                         Wrong Answer = 0
                     </p>
@@ -104,5 +102,5 @@ Authors: Ajith C Ravi, Parvez Shah -->
         </div>
 </body>
 
-
+<script src="app.js"></script>
 </html>
