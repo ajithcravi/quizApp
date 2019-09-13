@@ -1,0 +1,201 @@
+.container-fluid .box1{
+    background-color: white;
+    height: 6em;
+    width: 100vw;
+    padding: 0 !important;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-radius: 3%;
+    border-style: solid;
+    border-width: 1.5px;
+
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: white;
+    background-color: #BB2CD9;
+       
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .opnbtn{
+      margin-left: 2em;
+      padding-top: 2em;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+#maths{
+     
+      border-radius: 4%;
+      
+  }
+   #code{
+   
+    border-radius: 4%;
+  }
+#science{
+  
+    border-radius: 4%;
+}
+#time{
+    color: black;
+     text-align: center;
+    margin-top: -20px;
+}
+#quitbutton{
+    position: relative;
+    background-color: #FF3E4D;
+    border: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 80px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+     border-radius: 30%;
+    float: right;
+    margin-right: 1.5em;
+    margin-top: -3.9em;
+  }
+
+#quitbutton:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+  }
+  
+#quitbutton:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+#questions{
+    background-color: white;
+    height: 23em;
+    align-content: center;
+  
+}
+#endbuttons{
+    background-color:white;
+    height: 9.4em;
+    align-content: center;
+}
+#nextbutton{
+  position: relative;
+  background-color: #FF3E4D;
+  border: none;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 80px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+   border-radius: 30%;
+  float: right;
+  margin-right: 3em;
+  margin-top: -3em;
+  margin: 0%
+}
+#nextbutton:after {
+    content: "";
+    background: #EAF0F1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  #nextbutton:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+#backbutton{
+  position: relative;
+  background-color: #FF3E4D;
+  border: none;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 80px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: 2em;
+  border-radius: 30%;
+
+  
+}
+#backbutton:after {
+    content: "";
+    background-color: #BB2CD9;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+#backbutton:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
