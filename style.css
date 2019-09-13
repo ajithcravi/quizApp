@@ -88,7 +88,7 @@
     cursor: pointer;
      border-radius: 30%;
     float: right;
-    margin-right: 3em;
+    margin-right: 1.5em;
     margin-top: -3.9em;
   }
 
@@ -102,7 +102,7 @@
     margin-left: -20px!important;
     margin-top: -120%;
     opacity: 0;
-    transition: all 0.8s
+    transition: all 0.8s;
   }
   
 #quitbutton:active:after {
@@ -125,21 +125,23 @@
 }
 #nextbutton{
   position: relative;
-  background-color: #78909c;
+  background-color: #FF3E4D;
   border: none;
-  font-size: 20px;
+  font-size: 18px;
   color: #FFFFFF;
   padding: 20px;
-  width: 90px;
+  width: 80px;
   text-align: center;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
-  margin-left: 5em;
-  border-radius: 30%;
-
+   border-radius: 30%;
+  float: right;
+  margin-right: 3em;
+  margin-top: -3em;
+  margin: 0%
 }
 #nextbutton:after {
     content: "";
@@ -160,26 +162,27 @@
     transition: 0s
   }
 #backbutton{
-    position: relative;
-    background-color: #78909c;
-    border: none;
-    font-size: 20px;
-    color: #FFFFFF;
-    padding: 20px;
-    width: 90px;
-    text-align: center;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-    margin-left: 5em;
-    border-radius: 30%;  
-    margin-left: 24em;
+  position: relative;
+  background-color: #FF3E4D;
+  border: none;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 80px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: 2em;
+  border-radius: 30%;
+
+  
 }
 #backbutton:after {
     content: "";
-    background: #EAF0F1;
+    background-color: #BB2CD9;
     display: block;
     position: absolute;
     padding-top: 300%;
