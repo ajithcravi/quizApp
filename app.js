@@ -158,7 +158,7 @@ const MAX_QUESTIONS = 10;
 
 
 // During the start of the game ,the entire constants are defined
-startGame = () => {
+startGame = () => { 
   questionCounter = 0;
   score = 0;
   availableQuesions = [...questions];
@@ -237,3 +237,4 @@ highScoresList.innerHTML = highScores
 
 
  
+
