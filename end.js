@@ -1,3 +1,4 @@
+// The saving of the data and highscore calculation is done here
 const username = document.getElementById("username");
 const saveScoreBtn = document.getElementById("saveScoreBtn");
 const finalScore = document.getElementById("finalScore");

@@ -97,7 +97,9 @@ function getseconds() {
 
 
 
-// the game test starts here
+// The game test starts here
+// All the constants are defined here so that they can use according to the way they need
+
 
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
@@ -132,6 +134,7 @@ fetch(
       answerChoices.splice(
         formattedQuestion.answer - 1,
         0,
+        // The loading of the questions starts here
         loadedQuestion.correct_answer
       );
 
@@ -142,6 +145,7 @@ fetch(
       return formattedQuestion;
     });
 
+// The quiz game starts from here
     startGame();
   })
   .catch(err => {
@@ -150,8 +154,10 @@ fetch(
 
 //CONSTANTS
 const CORRECT_BONUS = 2;
-const MAX_QUESTIONS = 20;
+const MAX_QUESTIONS = 10;
 
+
+// During the start of the game ,the entire constants are defined
 startGame = () => {
   questionCounter = 0;
   score = 0;
@@ -185,6 +191,8 @@ getNewQuestion = () => {
   acceptingAnswers = true;
 };
 
+// The selection of the choices is done Headers,the user selects the choices depending upon his way of thinking.
+
 choices.forEach(choice => {
   choice.addEventListener("click", e => {
     if (!acceptingAnswers) return;
@@ -208,7 +216,7 @@ choices.forEach(choice => {
     }, 1000);
   });
 });
-
+// the score incrementation is done here
 incrementScore = num => {
   score += num;
   scoreText.innerText = score;
@@ -226,3 +234,6 @@ highScoresList.innerHTML = highScores
     return `<li class="high-score">${score.name} - ${score.score}</li>`;
   })
   .join("");
+
+
+ 
