@@ -1,3 +1,10 @@
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 1em;}
+  .sidenav a {font-size: 1em;}
+}
+
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
 /* Display Switch */
 .displayTwo{
   display: none;
@@ -10,7 +17,6 @@
 .displayQuestion{
   display: none;
 }
-
 
 :root {
     --primaryColour--:#BB2CD9;
@@ -52,7 +58,6 @@
   margin: 0em;
   text-align: center;
 }
-
 
 .primaryButton{
   width: 5em;
@@ -113,17 +118,10 @@
   padding-top: 1em;
 }
 
-
-
-
-
-
 .container-fluid .box1{
   margin: 0em !important;
   padding: 0 !important;
 }
-
-
 
 .sidenav {
   height: 100%;
@@ -179,18 +177,6 @@
   cursor: pointer;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 1em;}
-  .sidenav a {font-size: 1em;}
-}
-
-
-
-
-
-
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
-
 .question{
   font-size: var(--primaryFontSize--);
   font-family: var(--primaryFontFamily--);
@@ -202,7 +188,6 @@
 .answers label{
   display: block;
 }
-
 
 .slide{
   position: absolute;
