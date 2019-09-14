@@ -1,3 +1,8 @@
+<!-- Project title: Neuron Sport
+Description: This is a quiz app thet allows the user to take 10 questions per attempt.
+                Also it shows a detailed review and analysis of the attempt.
+Authors: Ajith C Ravi, Parvez Shah -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,50 +10,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Neuron Sport</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <div class="container-fluid box1">
-        <div class="row quiz">
-            <div class="col box1">
-                <div id="mySidenav" class="sidenav" >
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="#" id="maths">Maths</a>
-                    <a href="#" id="code">Coding</a>
-                    <a href="#" id="science">Science</a>
-                    
-                </div>
-                  
-                 
-                  <span class="opnbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-                  <div id="time">
-                      <h1>09:10</h1>
-                  </div>
-                  <div id="quit">
-                        <button class="button" id="quitbutton">Quit</button>
-                  </div>
+    <!-- First Display -->
+    <div class="container customContainer displayOne">
+        <div class="row firstRow">
+            <div class="col-2"></div>
+            <div class="col-6"></div>
+            <div class="col-4"><img class="topLogo" src="images/logo.png" alt="Logo"></div>
+        </div>
+        <div class="row secondRow">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <p class="mainContent">Do you know that your neuron can play?</p>
             </div>
-                        
+            <div class="col-1"></div>
         </div>
-        <div class="row questions" id="questions">
-            
-        </div>
-        <div class="row endbuttons" id="endbuttons">
-                <div class="col backbutton" >
-                    <button class="button" id="backbutton">Back</button>
-                </div>
-                
-               <div class="col nextbutton" >
-                    <button class="button" id="nextbutton">Next</button>
-               </div>
-             
+        <div class="row thirdRow">
+            <div class="col-1"></div>
+            <div class="col-10" style="text-align: center">
+                <button class="primaryButton" onclick="switchDiv(2)">How?</button>
+            </div>
+            <div class="col-1"></div>
         </div>
     </div>
-   
+    <!-- Second Display -->
+    <div id="two" class="container customContainer displayTwo">
+        <div class="row firstRow">
+            <div class="col-2"></div>
+            <div class="col-6"></div>
+            <div class="col-4"><img class="topLogo" src="images/logo.png" alt="Logo"></div>
+        </div>
+        <div class="row secondRow">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <p class="mainContent">Neurons play with quizes!!!</p>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row thirdRow">
+            <div class="col-1"></div>
+            <div class="col-10" style="text-align: center">
+                <button class="primaryButton customButtonOne" onclick="switchDiv(3)">Play Now</button>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <!-- Third Display -->
+    <div class="container customContainer displayThree">
+        <div class="row firstRow">
+            <div class="col-2"></div>
+            <div class="col-6"></div>
+            <div class="col-4"><img class="topLogo" src="images/logo.png" alt="Logo"></div>
+        </div>
+        <div class="row secondRow customSecondRow">
+            <div class="col-1"></div>
+            <div class="col-10">                    
+                <h2>Ten Questions</h2>
+                <p class="instruction">
+                    Aptitude - 4 <br>
+                    Mathematics - 4 <br>
+                    G.K - 2
+                </p>
+                <h2>Marks</h2>
+                <p class="instruction">
+                    Correct = 1 <br>
+                    Wrong = 0
+                </p>
+                <h2>Time</h2>
+                <p class="instruction">
+                    10 minutes
+                </p>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row thirdRow customThirdRow">
+            <div class="col-1"></div>
+            <div class="col-10" style="text-align: center">
+                <button class="primaryButton" onclick="switchDiv(4), countdown()">Start</button>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+        <!-- Question Display -->
+    <div class="container customContainer displayQuestion">
+        <div class="row firstRow">
+            <div class="col-2">
+                <div class="container-fluid box1">
+                            <div id="mySidenav" class="sidenav" >
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <a href="#" id="maths">Aptitude</a>
+                                <a href="#" id="code">Mathematics</a>
+                                <a href="#" id="science">G.K</a>                                
+                            </div>                                                       
+                            <span class="opnbtn" onclick="openNav()">&#9776; </span>
+                </div>
+            </div>
+            <div class="col-6"></div>
+            <div class="col-4"><img class="topLogo" src="images/logo.png" alt="Logo"></div>
+        </div>
+
+        <div class="row secondRow customSecondRow">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <input id=minutes>
+                <input id=seconds>
+            </div>
+            <div class="col-4"></div>
+        </div>
+        <div class="row thirdRow">
+            <div class="col-1"></div>
+            <div class="col-10" style="text-align: center">
+               
+
+              <!-- the game test starts here -->
+              <div id="loader"></div>
+      <div id="game" class="justify-center flex-column hidden">
+        <div id="hud">
+          <div id="hud-item">
+            <p id="progressText" class="hud-prefix">
+              Question
+            </p>
+            <div id="progressBar">
+              <div id="progressBarFull"></div>
+            </div>
+          </div>
+          <div id="hud-item">
+            <p class="hud-prefix">
+              Score
+            </p>
+            <h1 class="hud-main-text" id="score">
+              0
+            </h1>
+          </div>
+        </div>
+        <h2 id="question"></h2>
+        <div class="choice-container">
+          <p class="choice-prefix">A</p>
+          <p class="choice-text" data-number="1"></p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">B</p>
+          <p class="choice-text" data-number="2"></p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">C</p>
+          <p class="choice-text" data-number="3"></p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">D</p>
+          <p class="choice-text" data-number="4"></p>
+        </div>
+      </div>
+
+
+      <!-- the highscore container -->
+      <div id="highScores" class="flex-center flex-column">
+        <h1 id="finalScore">High Scores</h1>
+        <ul id="highScoresList"></ul>
+        <a class="btn" href="/">Go Home</a>
+      </div>
+            
+            </div>
+            
+        </div>
+    </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 <script src="app.js"></script>
 </html>
