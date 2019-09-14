@@ -93,7 +93,70 @@ function getseconds() {
         c: "Postpone"
       },
       correctAnswer: "a"
-    }
+    },
+    {
+      question: "Synonym of Corpulent",
+      answers: {
+        a: "wrong",
+        b: "Indifferent",
+        c: "True"
+      },
+      correctAnswer: "a"
+     },
+     {
+      question: "Synonym of Brief",
+      answers: {
+        a: "Exit",
+        b: "short",
+        c: "Postpone"
+      },
+      correctAnswer: "b"
+     },
+     {
+      question: "Synonym of Embezzel",
+      answers: {
+        a: "Example",
+        b: "Indifferent",
+        c: "Mis Appropriate"
+      },
+      correctAnswer: "c"
+     },
+     {
+      question: "Synonym of Vent",
+      answers: {
+        a: "Save",
+        b: "Opening",
+        c: "Post"
+      },
+      correctAnswer: "b"
+     },
+     {
+      question: "Synonym of August",
+      answers: {
+        a: "Differ",
+        b: "Dignifined",
+        c: "Hell"
+      },
+      correctAnswer: "b"
+     },
+     {
+      question: "Synonym of Canny",
+      answers: {
+        a: "Clever",
+        b: "Smart",
+        c: "Idiot"
+      },
+      correctAnswer: "a"
+     },
+     {
+      question: "Synonym of Alert",
+      answers: {
+        a: "Cautious",
+        b: "Emergency",
+        c: "one"
+      },
+      correctAnswer: "a"
+     }
   ];
 
   function buildQuiz() {
