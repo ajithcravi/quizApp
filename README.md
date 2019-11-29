@@ -1,18 +1,51 @@
-Title : Neuron Sport
+# Quiz App V 1.0.0
 
-Function of the App:
-This is a quiz apps that test's our skills on different category.
+Quiz is one of the inevitable sections of education. It helps students to understand and asses the depth they achieved in a particular subject. It is also used as a tool to motivate students towards learning. This application provides a good platform for quiz. In this application, users can attempt 10 questions in 10 minutes. Once submitted, the score is displayed and the user is given a chance to review the answers.
 
+## Getting Started
 
-Description:
-The application test our skills on general Aptitude,,Mathamatics and General Knowledge.Depending upon the number of questions have been correct you will be given scores and the scores that you got are also saved presenting upon the leader board. 
+Follow steps below to download and run this project in local machine
+1. Click on 'Clone or download'
+2. CLick 'Download ZIP'
+3. Extract the .zip file to the preferred location.
 
-Programing languages used: HTML,CSS,JAVASCRIPT.
+### Prerequisites
 
-Functionality Of the Application:
-The app runs on javascript it is designed in an html page and added css .The exam is conducted by randomizing the questions by using javascript functions so that the users will not be able to copy and fair exam can be conducted.
+* html
+* css
+* javascript
+* Bootstrap
 
+## Working
 
-                        <THANK YOU>
+1. Open the index.html to start the application
 
+![Home Screen](images/Home.png)
 
+2. TIt will then redirect to the main page
+
+![Main page](images/MainPage.png)
+
+3. Click on the buttons provided to proceed to quiz.
+
+![Proceed](images/Proceed.png)
+
+4. Click on start to start the quiz.
+
+![Start](images/Start.png)
+
+5. Answer each question and click on 'Next' to proceed to next question. Click on 'Previous' 
+
+![Questions](images/Next.png)
+
+6. Click on 'Submit' to submit the quiz. THe score will be displayed at the bottom.
+
+![Submit](images/Submit.png)
+
+7. Review the answers. The controls are similar to that while attempting the quiz.
+
+![Review](images/Review.png)
+
+## Author
+
+[**Ajith C Ravi**](https://github.com/ajithcravi)
