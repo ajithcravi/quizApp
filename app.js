@@ -4,7 +4,7 @@ let displayTwo = document.getElementsByClassName("displayTwo");
 let displayThree = document.getElementsByClassName("displayThree");
 let displayQuestion = document.getElementsByClassName("displayQuestion");
 
-function switchDiv(flag){
+function switchDiv(flag) {
   switch (flag) {
     case 2:
       displayOne[0].style.display = "none";
@@ -32,36 +32,34 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
-
 // Timer
 var mins = 10;
 var secs = mins * 60;
 function countdown() {
-    setTimeout('Decrement()', 60);
+  setTimeout("Decrement()", 60);
 }
 function Decrement() {
-    if (document.getElementById) {
-        minutes = document.getElementById("minutes");
-        seconds = document.getElementById("seconds");
-        if (seconds < 59) {
-            seconds.value = secs;
-        }
-        else {
-            minutes.value = getminutes();
-            seconds.value = getseconds();
-        }
-        if(secs>0) {
-            secs--;
-            setTimeout('Decrement()', 1000);
-        }
+  if (document.getElementById) {
+    minutes = document.getElementById("minutes");
+    seconds = document.getElementById("seconds");
+    if (seconds < 59) {
+      seconds.value = secs;
+    } else {
+      minutes.value = getminutes();
+      seconds.value = getseconds();
     }
+    if (secs > 0) {
+      secs--;
+      setTimeout("Decrement()", 1000);
+    }
+  }
 }
 function getminutes() {
-    mins = Math.floor(secs / 60);
-    return mins;
+  mins = Math.floor(secs / 60);
+  return mins;
 }
 function getseconds() {
-    return secs - Math.round(mins * 60);
+  return secs - Math.round(mins * 60);
 }
 
 // Questions
@@ -102,8 +100,8 @@ function getseconds() {
         c: "True"
       },
       correctAnswer: "a"
-     },
-     {
+    },
+    {
       question: "Synonym of Brief",
       answers: {
         a: "Exit",
@@ -111,8 +109,8 @@ function getseconds() {
         c: "Postpone"
       },
       correctAnswer: "b"
-     },
-     {
+    },
+    {
       question: "Synonym of Embezzel",
       answers: {
         a: "Example",
@@ -120,8 +118,8 @@ function getseconds() {
         c: "Mis Appropriate"
       },
       correctAnswer: "c"
-     },
-     {
+    },
+    {
       question: "Synonym of Vent",
       answers: {
         a: "Save",
@@ -129,8 +127,8 @@ function getseconds() {
         c: "Post"
       },
       correctAnswer: "b"
-     },
-     {
+    },
+    {
       question: "Synonym of August",
       answers: {
         a: "Differ",
@@ -138,8 +136,8 @@ function getseconds() {
         c: "Hell"
       },
       correctAnswer: "b"
-     },
-     {
+    },
+    {
       question: "Synonym of Canny",
       answers: {
         a: "Clever",
@@ -147,8 +145,8 @@ function getseconds() {
         c: "Idiot"
       },
       correctAnswer: "a"
-     },
-     {
+    },
+    {
       question: "Synonym of Alert",
       answers: {
         a: "Cautious",
@@ -156,7 +154,7 @@ function getseconds() {
         c: "one"
       },
       correctAnswer: "a"
-     }
+    }
   ];
 
   function buildQuiz() {
@@ -205,13 +203,13 @@ function getseconds() {
     slides[currentSlide].classList.remove("active-slide");
     slides[n].classList.add("active-slide");
     currentSlide = n;
-    
+
     if (currentSlide === 0) {
       previousButton.style.display = "none";
     } else {
       previousButton.style.display = "inline-block";
     }
-    
+
     if (currentSlide === slides.length - 1) {
       nextButton.style.display = "none";
       submitButton.style.display = "inline-block";
@@ -220,7 +218,6 @@ function getseconds() {
       submitButton.style.display = "none";
     }
   }
-
 
   function showNextSlide() {
     showSlide(currentSlide + 1);

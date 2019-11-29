@@ -219,3 +219,7 @@
   font-size: var(--primaryFontSize--);
   width: 2em;
 }
+
+#timer{
+  text-align: center;
+}
