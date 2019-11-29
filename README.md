@@ -30,15 +30,15 @@ Follow steps below to download and run this project in local machine
 
 ![Proceed](images/Proceed.png)
 
-4. Answer each question and click on 'Next' to proceed to next question. Click on 'Previous' 
+4. Answer each question and click on 'Next' to proceed to next question. 
 
 ![Start](images/Start.png)
 
-5. 
+5. Click on 'Previous' to move to the previous question.
 
 ![Questions](images/Next.png)
 
-6. Click on 'Submit' to submit the quiz. THe score will be displayed at the bottom.
+6. Click on 'Submit' to submit the quiz. The score will be displayed at the bottom.
 
 ![Submit](images/Submit.png)
 
