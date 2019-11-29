@@ -22,19 +22,19 @@ Follow steps below to download and run this project in local machine
 
 ![Home Screen](images/Home.png)
 
-2. TIt will then redirect to the main page
+2. It will then redirect to the main page. Click on the buttons provided to proceed to quiz.
 
 ![Main page](images/MainPage.png)
 
-3. Click on the buttons provided to proceed to quiz.
+3. Click on start to start the quiz.
 
 ![Proceed](images/Proceed.png)
 
-4. Click on start to start the quiz.
+4. Answer each question and click on 'Next' to proceed to next question. Click on 'Previous' 
 
 ![Start](images/Start.png)
 
-5. Answer each question and click on 'Next' to proceed to next question. Click on 'Previous' 
+5. 
 
 ![Questions](images/Next.png)
 
